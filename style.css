@@ -1,0 +1,219 @@
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2"),
+    url("../fonts/poppins-v20-latin-300.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"),
+    url("../fonts/poppins-v20-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"),
+    url("../fonts/poppins-v20-latin-600.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 900;
+  src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2"),
+    url("../fonts/poppins-v20-latin-900.woff") format("woff");
+}
+
+/* global */
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 1280px;
+}
+main {
+  background-color: lightblue;
+
+  /* margin: 0 auto; */
+}
+
+ul p {
+  /* margin: 0;
+  padding: 0; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.more-link {
+  background-color: aquamarine;
+  width: 200px;
+  border-radius: 4px;
+  /* margin: 0 auto; */
+}
+
+h1 {
+  padding: 48px 0 0;
+
+  font-size: 42px;
+  text-align: center;
+  max-width: 1024px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  padding: 24px 0;
+  font-size: 28px;
+  text-align: center;
+}
+h4 {
+  /* margin: 0 auto; */
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+}
+ul li {
+  list-style: none;
+}
+
+/* header */
+.header {
+  /* margin: 0 auto; */
+  /* max-width: 1280px; */
+  background-color: blanchedalmond;
+}
+
+/* .header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+} */
+
+.header-menu {
+  display: flex;
+  gap: 16px;
+  flex-grow: 1;
+  height: 32px;
+}
+
+.menu-hidden {
+  position: relative;
+  height: 32px;
+}
+
+.menu-hidden ul {
+  display: none; /* ховаємо */
+  position: absolute; /* щоб не рухало меню */
+  top: 100%; /* під пунктом меню */
+  left: 0;
+  background: rgb(161, 30, 30);
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  z-index: 999;
+}
+.menu-hidden:hover ul {
+  display: block;
+}
+
+.image-background {
+  /* max-width: 1280px; */
+  background-image: url("images/image.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 80vh;
+}
+
+/* Окремі елементи в підменю */
+.menu-hidden ul li {
+  padding: 5px 0;
+  white-space: nowrap; /* щоб не переносився текст */
+}
+
+/* sections about and clubs*/
+.section-about,
+.section-clubs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 1280px; */
+
+  /* margin: 20px auto; */
+}
+.section-about-image,
+.section-clubs-image {
+  flex: 1;
+  max-width: 50%;
+  background-color: blueviolet;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+.section-about-image img,
+.section-clubs-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.section-about-text,
+.section-clubs-text {
+  flex: 1;
+  text-align: center;
+  line-height: 2.5;
+  padding: 24px;
+}
+
+/* footer */
+
+.footer {
+  /* margin: 0 auto; */
+  display: flex;
+  /* max-width: 1232px; */
+  padding: 24px;
+  gap: 48px;
+  background-color: chartreuse;
+}
+
+.footer-facebook,
+.footer-main {
+  flex: 1;
+}
+
+.footer-facebook h4 {
+  padding-bottom: 20px;
+}
+
+.footer-main {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-main-nav {
+  flex: 1;
+}
+
+.footer-main-nav ul {
+  padding: 0;
+}
+
+.footer-main-address {
+  font-style: normal;
+  flex: 1;
+}
+
+.footer-main-nav ul li {
+  padding: 8px;
+}
+.footer-facebook img {
+  width: 100%;
+}
